@@ -1,0 +1,6 @@
+homepage: "http://www.exim.org/"
+primary_contact: "fixme"
+sanitizers:
+  - address
+  - undefined
+  - memory

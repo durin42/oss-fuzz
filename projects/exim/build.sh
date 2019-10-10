@@ -1,0 +1,2 @@
+cd fuzz
+make all
