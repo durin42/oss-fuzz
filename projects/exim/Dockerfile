@@ -14,8 +14,10 @@
 #
 ################################################################################
 
+
 FROM gcr.io/oss-fuzz-base/base-builder
-MAINTAINER FIX_ME@example.com
+MAINTAINER hs@schlittermann.de
+ARG SRC=/src
 
 # We can't just use build-dep because no source lines are in apt in
 # the image. I figured this out by doing
@@ -123,6 +125,7 @@ RUN apt-get update && apt-get install -y \
   xtrans-dev \
   zlib1g-dev
 
-RUN git clone git://git.exim.org/exim.git exim
+#RUN git clone git://git.exim.org/exim.git exim
+RUN git clone --branch fuzz-no-cpp https://git.schlittermann.de/exim/exim
 WORKDIR exim
 COPY build.sh $SRC/
