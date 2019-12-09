@@ -1,5 +1,5 @@
-homepage: "http://www.exim.org/"
-primary_contact: "fixme"
+homepage: "https://www.exim.org/"
+primary_contact: "hs@schlittermann.de"
 sanitizers:
   - address
   - undefined

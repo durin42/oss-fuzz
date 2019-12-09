@@ -126,6 +126,6 @@ RUN apt-get update && apt-get install -y \
   zlib1g-dev
 
 #RUN git clone git://git.exim.org/exim.git exim
-RUN git clone --branch fuzz-no-cpp https://git.schlittermann.de/exim/exim
+RUN git clone --branch fuzz-no-cpp https://git.schlittermann.de/user/heiko/exim
 WORKDIR exim
 COPY build.sh $SRC/
