@@ -1,5 +1,7 @@
 homepage: "https://www.exim.org/"
 primary_contact: "hs@schlittermann.de"
+auto_ccs:
+  - "durin42@gmail.com"
 sanitizers:
   - address
   - undefined
